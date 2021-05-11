@@ -8,3 +8,14 @@ C:\Users\thiernd\source\repos\GestionStock\GestionStock\obj\Debug\GestionStock.c
 C:\Users\thiernd\source\repos\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.CoreCompileInputs.cache
 C:\Users\thiernd\source\repos\GestionStock\GestionStock\obj\Debug\GestionStock.exe
 C:\Users\thiernd\source\repos\GestionStock\GestionStock\obj\Debug\GestionStock.pdb
+C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\bin\Debug\GestionStock.exe.config
+C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\bin\Debug\GestionStock.exe
+C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\bin\Debug\GestionStock.pdb
+C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\obj\Debug\GestionStock.csprojAssemblyReference.cache
+C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\obj\Debug\GestionStock.AjoutProduit.resources
+C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\obj\Debug\GestionStock.Form1.resources
+C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\obj\Debug\GestionStock.Properties.Resources.resources
+C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.GenerateResource.cache
+C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.CoreCompileInputs.cache
+C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\obj\Debug\GestionStock.exe
+C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\obj\Debug\GestionStock.pdb
