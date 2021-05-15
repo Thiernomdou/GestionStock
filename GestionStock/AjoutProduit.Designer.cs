@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.labelMenu = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,9 +49,6 @@
             this.comboBoxEtat = new System.Windows.Forms.ComboBox();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();
-            this.labelMenu = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +66,50 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(621, 72);
             this.panel1.TabIndex = 2;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.BackColor = System.Drawing.Color.Black;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(472, 0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(74, 72);
+            this.button4.TabIndex = 20;
+            this.button4.Text = "-";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(546, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 72);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "X";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // labelMenu
+            // 
+            this.labelMenu.AutoSize = true;
+            this.labelMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMenu.ForeColor = System.Drawing.Color.White;
+            this.labelMenu.Location = new System.Drawing.Point(3, 22);
+            this.labelMenu.Name = "labelMenu";
+            this.labelMenu.Size = new System.Drawing.Size(167, 25);
+            this.labelMenu.TabIndex = 4;
+            this.labelMenu.Text = "Ajouter produit";
+            this.labelMenu.Click += new System.EventHandler(this.labelMenu_Click);
             // 
             // label1
             // 
@@ -170,6 +214,7 @@
             // 
             this.textBoxUSD.Location = new System.Drawing.Point(448, 252);
             this.textBoxUSD.Name = "textBoxUSD";
+            this.textBoxUSD.ReadOnly = true;
             this.textBoxUSD.Size = new System.Drawing.Size(123, 26);
             this.textBoxUSD.TabIndex = 13;
             // 
@@ -179,11 +224,13 @@
             this.textBoxStock.Name = "textBoxStock";
             this.textBoxStock.Size = new System.Drawing.Size(123, 26);
             this.textBoxStock.TabIndex = 14;
+            this.textBoxStock.TextChanged += new System.EventHandler(this.textBoxStock_TextChanged);
             // 
             // textBoxQteCrit
             // 
             this.textBoxQteCrit.Location = new System.Drawing.Point(448, 313);
             this.textBoxQteCrit.Name = "textBoxQteCrit";
+            this.textBoxQteCrit.ReadOnly = true;
             this.textBoxQteCrit.Size = new System.Drawing.Size(123, 26);
             this.textBoxQteCrit.TabIndex = 15;
             // 
@@ -228,50 +275,6 @@
             this.btnAnnuler.TabIndex = 18;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = false;
-            // 
-            // labelMenu
-            // 
-            this.labelMenu.AutoSize = true;
-            this.labelMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMenu.ForeColor = System.Drawing.Color.White;
-            this.labelMenu.Location = new System.Drawing.Point(3, 22);
-            this.labelMenu.Name = "labelMenu";
-            this.labelMenu.Size = new System.Drawing.Size(167, 25);
-            this.labelMenu.TabIndex = 4;
-            this.labelMenu.Text = "Ajouter produit";
-            this.labelMenu.Click += new System.EventHandler(this.labelMenu_Click);
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(546, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 72);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "X";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.Black;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(472, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(74, 72);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "-";
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // AjoutProduit
             // 
