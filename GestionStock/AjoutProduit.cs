@@ -22,13 +22,61 @@ namespace GestionStock
 
         }
 
+        //Bouton ajouter produit
         private void btnAjouter_Click(object sender, EventArgs e)
         {
+            //création des variables
+            string designation = textBoxDesignation.Text.Trim();
+            decimal euros = Convert.ToDecimal(textBoxEuros.Text.Trim());
+            decimal usd = Convert.ToDecimal(textBoxUSD.Text.Trim());
+            int stock = Convert.ToInt32(textBoxStock.Text.Trim());
+            int qtecrit = Convert.ToInt32(textBoxQteCrit.Text.Trim());
+            int taux = Convert.ToInt32(comboBoxTaux.Text.Trim());
+            bool etat = true;
 
+            //Vérification de l'index de comboboxEtatProduit
+            if(comboBoxEtat.SelectedIndex == 0)
+            {
+                etat = true;
+            }
+            else
+            {
+                etat = false;
+            }
+
+            if(!produit.VerifProduit(designation))
+            {
+
+            
+                //Insertion du produit en stock
+                if(produit.ajouterProduit(designation, euros, usd, stock, qtecrit, taux, etat))
+                {
+                    MessageBox.Show("Produit ajouté en stock avec succès!", "Ajouter produit", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    textBoxEuros.Clear();
+                    textBoxStock.Clear();
+                    comboBoxEtat.SelectedIndex = 0;
+                }
+                else
+                {
+                    MessageBox.Show("Erreur", "Ajouter produit", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ce nom de produit saisi existe déjà dans le stock, veuillez choisir un autre nom de produit", "Ancien produit", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
+
+        //importer la classe AjouterProduit
+        AjouterProduit produit = new AjouterProduit();
 
         private void AjoutProduit_Load(object sender, EventArgs e)
         {
+            //chargement de taux du jour
+            comboBoxTaux.DataSource = produit.ChargerTauxDuJour();
+            comboBoxTaux.DisplayMember = "taux";
+            comboBoxTaux.ValueMember = "taux";
+
             comboBoxEtat.SelectedIndex = 0;
         }
 
@@ -102,6 +150,39 @@ namespace GestionStock
                     textBoxQteCrit.Text = resultat.ToString();
                 }
             }
+        }
+
+        private void comboBoxTaux_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Veuillez saisir seulement une valeur numérique !");
+            }
+        }
+
+        private void comboBoxEtat_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Veuillez saisir seulement une valeur numérique !");
+            }
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            textBoxDesignation.Text = "";
+            textBoxEuros.Text = "";
+            textBoxUSD.Text = "";
+            textBoxStock.Text = "";
+            textBoxQteCrit.Text = "";
+            comboBoxEtat.SelectedIndex = 0;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

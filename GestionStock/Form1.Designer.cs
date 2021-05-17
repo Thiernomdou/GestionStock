@@ -70,6 +70,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -96,7 +98,8 @@
             // fichierToolStripMenuItem
             // 
             this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nouveauToolStripMenuItem});
+            this.nouveauToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
             this.fichierToolStripMenuItem.Size = new System.Drawing.Size(68, 25);
             this.fichierToolStripMenuItem.Text = "Fichier";
@@ -114,23 +117,29 @@
             // 
             this.nouveauProduitToolStripMenuItem1.BackColor = System.Drawing.Color.MistyRose;
             this.nouveauProduitToolStripMenuItem1.Name = "nouveauProduitToolStripMenuItem1";
-            this.nouveauProduitToolStripMenuItem1.Size = new System.Drawing.Size(198, 26);
+            this.nouveauProduitToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.nouveauProduitToolStripMenuItem1.Size = new System.Drawing.Size(256, 26);
             this.nouveauProduitToolStripMenuItem1.Text = "Nouveau produit";
             this.nouveauProduitToolStripMenuItem1.Click += new System.EventHandler(this.nouveauProduitToolStripMenuItem1_Click);
             // 
             // gestionStockToolStripMenuItem
             // 
             this.gestionStockToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nouveauProduitToolStripMenuItem});
+            this.nouveauProduitToolStripMenuItem,
+            this.toolStripMenuItem2});
             this.gestionStockToolStripMenuItem.Name = "gestionStockToolStripMenuItem";
             this.gestionStockToolStripMenuItem.Size = new System.Drawing.Size(116, 25);
             this.gestionStockToolStripMenuItem.Text = "Gestion Stock";
             // 
             // nouveauProduitToolStripMenuItem
             // 
+            this.nouveauProduitToolStripMenuItem.BackColor = System.Drawing.Color.MistyRose;
             this.nouveauProduitToolStripMenuItem.Name = "nouveauProduitToolStripMenuItem";
-            this.nouveauProduitToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
-            this.nouveauProduitToolStripMenuItem.Text = "Nouveau produit";
+            this.nouveauProduitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.S)));
+            this.nouveauProduitToolStripMenuItem.Size = new System.Drawing.Size(272, 26);
+            this.nouveauProduitToolStripMenuItem.Text = "Stock en cours";
+            this.nouveauProduitToolStripMenuItem.Click += new System.EventHandler(this.nouveauProduitToolStripMenuItem_Click);
             // 
             // aideToolStripMenuItem
             // 
@@ -569,6 +578,16 @@
             this.dataGridView2.Size = new System.Drawing.Size(994, 420);
             this.dataGridView2.TabIndex = 0;
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(195, 6);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -645,6 +664,8 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker4;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
     }
 }
 

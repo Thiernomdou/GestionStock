@@ -27,5 +27,10 @@ namespace GestionStock
             AjoutProduit ajout = new AjoutProduit();
             ajout.ShowDialog();
         }
+
+        private void nouveauProduitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

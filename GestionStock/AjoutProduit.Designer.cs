@@ -98,6 +98,7 @@
             this.button3.TabIndex = 19;
             this.button3.Text = "X";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // labelMenu
             // 
@@ -194,6 +195,7 @@
             this.comboBoxTaux.Name = "comboBoxTaux";
             this.comboBoxTaux.Size = new System.Drawing.Size(123, 28);
             this.comboBoxTaux.TabIndex = 10;
+            this.comboBoxTaux.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBoxTaux_KeyPress);
             // 
             // textBoxDesignation
             // 
@@ -245,6 +247,7 @@
             this.comboBoxEtat.Name = "comboBoxEtat";
             this.comboBoxEtat.Size = new System.Drawing.Size(123, 28);
             this.comboBoxEtat.TabIndex = 16;
+            this.comboBoxEtat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBoxEtat_KeyPress);
             // 
             // btnAjouter
             // 
@@ -275,6 +278,7 @@
             this.btnAnnuler.TabIndex = 18;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = false;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // AjoutProduit
             // 
