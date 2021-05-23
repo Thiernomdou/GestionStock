@@ -30,7 +30,8 @@ namespace GestionStock
 
         private void nouveauProduitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            StockEnCours stockEnCours = new StockEnCours();
+            stockEnCours.ShowDialog();
         }
     }
 }

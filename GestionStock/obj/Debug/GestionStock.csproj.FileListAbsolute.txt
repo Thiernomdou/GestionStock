@@ -50,3 +50,4 @@ C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\bin\Debug\Syst
 C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.CopyComplete
+C:\Users\thiernd\Documents\Projets\.NET\GestionStock\GestionStock\obj\Debug\GestionStock.StockEnCours.resources
