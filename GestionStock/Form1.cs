@@ -33,5 +33,10 @@ namespace GestionStock
             StockEnCours stockEnCours = new StockEnCours();
             stockEnCours.ShowDialog();
         }
+
+        private void fichierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

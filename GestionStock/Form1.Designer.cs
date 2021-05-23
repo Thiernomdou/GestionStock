@@ -32,8 +32,10 @@
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nouveauToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nouveauProduitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.gestionStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nouveauProduitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.aideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -70,8 +72,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -103,6 +103,7 @@
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
             this.fichierToolStripMenuItem.Size = new System.Drawing.Size(68, 25);
             this.fichierToolStripMenuItem.Text = "Fichier";
+            this.fichierToolStripMenuItem.Click += new System.EventHandler(this.fichierToolStripMenuItem_Click);
             // 
             // nouveauToolStripMenuItem
             // 
@@ -122,6 +123,11 @@
             this.nouveauProduitToolStripMenuItem1.Text = "Nouveau produit";
             this.nouveauProduitToolStripMenuItem1.Click += new System.EventHandler(this.nouveauProduitToolStripMenuItem1_Click);
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            // 
             // gestionStockToolStripMenuItem
             // 
             this.gestionStockToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -140,6 +146,11 @@
             this.nouveauProduitToolStripMenuItem.Size = new System.Drawing.Size(272, 26);
             this.nouveauProduitToolStripMenuItem.Text = "Stock en cours";
             this.nouveauProduitToolStripMenuItem.Click += new System.EventHandler(this.nouveauProduitToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(269, 6);
             // 
             // aideToolStripMenuItem
             // 
@@ -577,16 +588,6 @@
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.Size = new System.Drawing.Size(994, 420);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(195, 6);
             // 
             // Form1
             // 
